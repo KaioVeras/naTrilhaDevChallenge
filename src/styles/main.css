@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+main {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-section {
+  color: #fff;
+  padding-top: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1310px;
+  gap: 130px;
+}
+
+.hero-contact {
+  width: 50%;
+}
+
+.hero-section h1 {
+  font-size: 38px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin: 20px 0px 30px 0px;
+}
+
+.container-hero-image {
+  display: flex;
+}
+
+.background-hero-image {
+  height: 390px;
+  width: 390px;
+  background: linear-gradient(181deg, #51850c 43.72%, #a8ff36 99.55%);
+  border-radius: 35px;
+  transform: rotate(7.5deg);
+}
+
+.hero-image {
+  background-image: url("https://img.freepik.com/fotos-premium/profissional-masculino-trabalhando-ate-tarde-no-computador-em-um-escritorio-escuro-com-varias-telas-exibindo-dados_260899-5734.jpg");
+  width: 390px;
+  height: 390px;
+  margin: 10px -300px 0px 0px;
+  z-index: 2;
+  border-radius: 35px;
+}
+
+@media (max-width: 1310px) {
+  .hero-image {
+    height: 330px;
+    width: 330px;
+    margin: 12px -280px 0px 0px;
+  }
+
+  .background-hero-image {
+    height: 330px;
+    width: 330px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1075px) {
+  .hero-section {
+    flex-direction: column;
+    gap: 80px;
+    margin-top: -80px;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+  }
+
+  .hero-contact {
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+  }
+
+  .container-hero-image {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .hero-image {
+    height: 450px;
+    width: 450px;
+    margin: 12px -380px 0px 0px;
+  }
+
+  .background-hero-image {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-image {
+    height: 340px;
+    width: 340px;
+    margin: 12px -300px 0px 0px;
+    background-position: center;
+  }
+
+  .background-hero-image {
+    height: 340px;
+    width: 340px;
+  }
+
+  .hero-contact {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-image {
+    height: 300px;
+    width: 300px;
+    margin: 8px -250px 0px 0px;
+  }
+
+  .background-hero-image {
+    height: 300px;
+    width: 300px;
+  }
+
+  .hero-contact {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+  }
+}

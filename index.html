@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Na Trilha do Dev</title>
-</head>
-<body>
-    
-</body>
+
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/main.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="#">
+        <img src="src/assets/logo.png" alt="Logo" class="logo" />
+      </a>
+
+      <nav id="nav-max">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portifolio</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">FaQ</a></li>
+
+          <button class="contact-button">Contact</button>
+        </ul>
+      </nav>
+
+      <button
+        id="button-menu-min"
+        onclick="openMenu()"
+        aria-label="Botão para abrir o menu"
+      ></button>
+    </header>
+
+    <nav id="nav-min">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portifolio</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FaQ</a></li>
+
+        <button class="contact-button">Contact</button>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-contact">
+          <h1>Construindo Parcerias Duradouras através do Design</h1>
+          <p>Construímos relacionamentos de longo prazo com clientes, entregando designs excepcionais e impactantes. Sua visão, nossa expertise, juntos, criamos soluções que realmente se destacam. Nosso compromisso é com a qualidade consistente e o sucesso colaborativo.</p>
+          <button class="contact-button">Contact with me</button>
+        </div>
+
+        <div class="container-hero-image">
+          <div class="hero-image"></div>
+          <div class="background-hero-image"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/javaScript/openMenu.js"></script>
+  </body>
 </html>
