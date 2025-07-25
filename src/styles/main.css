@@ -194,6 +194,9 @@ main {
 
 .card-portifolio {
   background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
