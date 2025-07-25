@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+  --bg-color-about: #f3f3f3;
+}
+
 /* Estilo HERO Section */
 
 main {
@@ -58,7 +62,7 @@ main {
 /* Estilo Section SOBRE */
 
 .section-sobre {
-  background-color: #f3f3f3;
+  background-color: var(--bg-color-about);
   width: 100%;
   display: flex;
   align-items: center;
